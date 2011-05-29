@@ -29,3 +29,6 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+# adding per instructions @ http://sraji.wordpress.com/2011/05/25/soultion-for-rake-aborted-undefined-method-task-in-rails-3-0-7/
+gem 'rake', '0.8.7'
