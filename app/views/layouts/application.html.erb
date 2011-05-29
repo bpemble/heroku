@@ -8,11 +8,72 @@
 </head>
 <body>
 
-<div class="nav">
-	<a href="/">Home</a> | <a href="/about">About</a>
-</div>
-
+<table border="0" cellpadding="0" cellspacing="0" id="header"> 
+  <tr> 
+    <td id="logo"> 
+      <a href="/" title="Home"><img src="images/logo.png" alt="Home" /></a>                </td> 
+    <td id="menu"> 
+                      </td> 
+  </tr> 
+  <tr> 
+    <td colspan="2"><div></div></td> 
+  </tr> 
+</table> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" id="nav"> 
+  <tr> 
+    <td width="15"><img src="images/nav-left.gif"/></td> 
+    <td width="960" valign="top" class="nav-middle"> 
+   		<table border="0" cellpadding="0" cellspacing="0"> 
+   			<tr> 
+   				<td align="center"><a href="/">Home</a></td> 
+		   		<td align="center" style="border-right: 1px solid #c1b597;"><a href="about">About</a></td> 
+		   	</tr> 
+		</table> 
+    </td> 
+    <td width="15"><img src="images/nav-right.gif"/></td> 
+  </tr> 
+</table> 
+ 
+<table border="0" cellpadding="0" cellspacing="0" id="content"> 
+  <tr> 
+    <td id="sidebar-left"> 
+        <div class="block block-user" id="block-user-1"> 
+    </td>
+    <td valign="top"> 
+            <div id="main"> 
+        <div class="breadcrumb"><a href="/">Home</a></div>        <h1 class="title">About Us</h1> 
+                          <div class="node"> 
+            <span class="submitted"></span> 
+    <div class="taxonomy"></div> 
+    <div class="content"><div class="content-box"> 
+<div class="sub-box"> 
+ 
 <%= yield %>
+ 
+</div> 
+</div></div> 
+        
+      </div> 
+              </div> 
+    </td> 
+      </tr> 
+</table> 
+
+<table border="0" cellpadding="0" cellspacing="0" class="footer"> 
+	<tr><td style="background: url(images/footer-top.gif); height: 3px;"></td></tr> 
+	<tr><td style="background: url(images/footer-middle.gif); padding: 7px 10px;"><span style="float: left;"><a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="about">About</a></span><span style="float: right;">&copy; 2010 pembull.com. All Rights Reserved.</span></td></tr> 
+  	<tr><td style="background: url(images/footer-bottom.gif); height: 3px;"></td></tr> 
+  	</tr> 
+</table> 
+ 
+<br/><br/><br/><br/>&nbsp;
+ 
+<div id="footer"> 
+      <div class="block block-system" id="block-system-0"> 
+    <h2 class="title"></h2> 
+ </div> 
+</div>
 
 </body>
 </html>
