@@ -51,8 +51,9 @@ Blog::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => "index#index"
-  match "/about" => "about#about"
-  match "/contact" => "contact#contact"
+  match "/about-us" => "about#about"
+  match "/contact-us" => "contact#contact"
+  match "/thank-you" => "contact#thank-you"
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,3 +1,26 @@
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
-<p>Lorem ipsum dolor sit amet...</p>
+<p>Get in touch with the form below.</p>
+
+<br/>
+
+<%= form_tag('thank-you') do -%>
+	<table>
+		<tr>
+			<td align="right">Name</td>
+			<td><%= text_field_tag :name %></td>
+		</tr>
+		<tr>
+			<td align="right">Subject</td>
+			<td><%= text_field_tag :subject %></td>
+		</tr>
+		<tr>
+			<td align="right">Description</td>
+			<td><%= text_area_tag:description, nil, :size => "50x5" %></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><%= submit_tag "Submit"  %></td>
+		</tr>
+	</table>
+<% end -%>
